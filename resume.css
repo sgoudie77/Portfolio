@@ -1,3 +1,4 @@
+/* Global Styles Start Here */
 @import url('http://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
 
 * {
@@ -26,7 +27,9 @@ body {
     grid-template-columns: 1fr 2fr;
     box-shadow: 0 35px 55px rgbna(0, 0, 0, 0.1);
 }
+/* Global Styles End Here */
 
+/* Left Column Styles Start Here */
 .container .left_side {
     position: relative;
     background: #3f3f3f;
@@ -46,7 +49,6 @@ body {
     position: relative;
     width: 200px;
     height: 225px;
-    /* border-radius: 50%; */
     overflow: hidden;
 }
 
@@ -70,12 +72,6 @@ body {
     letter-spacing: 1px;
 }
 
-.profileText h2 span {
-    font-size: 0.8em;
-    font-weight: 200;
-    letter-spacing: 1px;
-}
-
 .contactInfo {
     padding-top: 40px;
 }
@@ -83,9 +79,8 @@ body {
 .title {
     color: #fff;
     text-transform: uppercase;
-    font-weight: 200;
+    font-weight: 300;
     letter-spacing: 1px;
-    margin-bottom: 20px;
 }
 
 .contactInfo ul {
@@ -105,12 +100,22 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #027141;
+    color: #03a9f4;
 }
 
 .contactInfo ul li span {
     color: #fff;
     font-weight: 300;
+}
+
+.contactInfo ul li span a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.contactInfo ul li span a:hover {
+    color: #03a9f4;
+    transition: 0.3s;
 }
 
 .contactInfo.details {
@@ -123,9 +128,11 @@ body {
 }
 
 .contactInfo.education h5 {
-    color: #027141;
-    font-weight: 600;
-    letter-spacing: .5px;
+    /* color: #03a9f4; */
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 1px;
+    text-transform: uppercase;
 }
 
 .contactInfo.education h4:nth-child(2) {
@@ -140,27 +147,24 @@ body {
     letter-spacing: 1px;
 }
 
+.contactInfo.education h4 span {
+    color: #03a9f4;
+}
+
 .contactInfo.education {
     border-bottom: 1px solid rgba(255,255,255,0.2);
     padding-bottom: .5em;
 }
 
-.contactInfo.language .percent {
-    position: relative;
-    width: 100%;
-    height: 6px;
-    background: #081921;
-    display: block;
-    margin-top: 5px;
+.contactInfo.language ul li {
+    color: #fff;
+    letter-spacing: 1px;
 }
 
-.contactInfo.language .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
+.contactInfo.language ul li span {
+    color: #03a9f4;
 }
+/* Left Column Styles End Here */
 
 /* Right Column Styles Start Here */
 .container .right_side {
@@ -170,7 +174,7 @@ body {
 }
 
 .about {
-    margin-bottom: 50px;
+    margin-bottom: 1em;
 }
 
 .about:last-child {
@@ -181,7 +185,7 @@ body {
     color: #3f3f3f;
     text-transform: uppercase;
     letter-spacing: 1px;
-    margin-bottom: 10px;
+    font-weight: 600;
 }
 
 p {
@@ -190,81 +194,71 @@ p {
 
 .about .box {
     display: flex;
-    flex-direction: row;
-    margin: 20px 0;
+    flex-direction: column;
+    margin-bottom: 20px;
 }
 
 .about .box .date-employer {
     min-width: 150px;
+    display: flex;
+    justify-content: space-between;
 }
 
-.about .box .date-employer h5 {
-    text-transform: uppercase;
-    color: #3f3f3f;
+.about .box .date-employer h4 {
+    color: #03a9f4;
     font-weight: 500;
+}
+
+.about .box .date-employer h4:nth-child(2) {
+    text-transform: uppercase;
+    font-size: .9em;
+    color: #3f3f3f;
+}
+
+.about .box .text ul li {
+    color: #3f3f3f;
 }
 
 .about .box .text h4 {
-    text-transform: uppercase;
-    color: #027141;
-    font-size: 16px;
-}
-
-.skills .box {
-    position: relative;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 150px 1fr;
-    justify-content: center;
-    align-items: center;
-}
-
-.skills .box h4 {
-    text-transform: uppercase;
-    color: #848c90;
     font-weight: 500;
 }
 
-.skills .box .percent {
-    position: relative;
-    width: 100%;
-    height: 10px;
-    background: #f0f0f0;
-}
-
-.skills .box .percent div {
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background: #03a9f4;
-}
-
-.interest ul {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-}
-
-.interest ul li {
-    list-style: none;
-    color: #333;
+.about .box .text h5 {
+    color: #3f3f3f;
     font-weight: 500;
-    margin: 10px 0;
+    font-size: .9em;
+    font-style: italic;
+    margin-top: .2em;
 }
 
-.interest ul li .fa {
-    color: #03a9f4;
-    font-size: 18px;
-    width: 20px;
+.skills-box {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.skills-box h4 {
+    color: #3f3f3f;
+    padding-right: 1.1em;
+    font-weight: 400;
+}
+
+.development ul li {
+    font-weight: 400;
+    color: #3f3f3f;
+}
+
+.references h4 {
+    color: #3f3f3f;
+    font-weight: 400;
+}
+/* Right Column Styles End Here */
+
+/* Responsive Styles Start Here */
 @media (max-width: 1000px) {
     .container {
         margin: 10px;
         grid-template-columns: repeat(1,1fr);
-    }
-    .interest ul {
-        grid-template-columns: repeat(2,1fr);
     }
 }
 
@@ -274,11 +268,7 @@ p {
     }
     .about .box .date-employer {
         margin-bottom: 5px;
-    }
-    .interest ul {
-        grid-template-columns: repeat(1, 1fr);
-    }
-    .skills .box {  
-        grid-template-columns: repeat(1, 1fr);
+        flex-direction: column;
     }
 }
+/* Responsive Styles End Here */
