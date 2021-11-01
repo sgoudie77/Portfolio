@@ -5,6 +5,14 @@ window.addEventListener("scroll", function(){
 })
 
 // Menu Toggle for Responsive Design
+function toggleMenu(){
+    const menuToggle = document.querySelector('.toggle');
+    const navigation = document.querySelector('.navigation');
+    const title = document.querySelector('.hero-title');
+    menuToggle.classList.toggle('active');
+    navigation.classList.toggle('active');
+    title.classList.toggle('active');
+}
 
 // Portfolio Filter
 let list = document.querySelectorAll('.list');

@@ -15,14 +15,15 @@
         
         <div class="header">
             <div class="logo">
-                <a href="#portfolio" class="logo">Port<span>folio</span></a>
+                <a href="#home" class="logo">Port<span>folio</span></a>
             </div>
+            <div class="toggle" onclick="toggleMenu();"></div>
             <div class="navbar">
-                <ul>
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                <ul class="navigation">
+                    <li><a href="#home" onclick="toggleMenu();">Home</a></li>
+                    <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                    <li><a href="#portfolio" onclick="toggleMenu();">Portfolio</a></li>
+                    <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -37,7 +38,7 @@
             <a href="#about"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
         </div>
     </div>
-    <!-- hero section endss here -->
+    <!-- hero section ends here -->
 
     <!-- about section starts here -->
     <div class="container about" id="about">
@@ -69,7 +70,7 @@
                         <h3>This Portfolio Site</h3>
                     </div>
                     <div>
-                        <p class="info-text">This portfolio site is an ongoing project as I continue learning, and it was built from scratch with HTML, CSS, and JavaScript using what I have learned from countless lessons and tutorials to showcase my projects. Image credits for this site go to <em>Samuel Scalzo</em> on Unsplash.com.</p>
+                        <p class="info-text">This portfolio site is an ongoing project as I continue learning, and it was built from scratch with HTML, CSS, and JavaScript using what I have learned from countless lessons and tutorials to showcase my projects. Background image credit goes to <em>Samuel Scalzo</em> on <em>Unsplash.com</em>.</p>
                     </div>
                     <div class="about-btn">
                         <button><a href="https://github.com/sgoudie77/Portfolio" target="_blank">Source Code</a></button>
@@ -169,7 +170,7 @@
             </div>
             
             <div class="contact-form">
-                <form action="https://formsubmit.co/email@example.com" method="POST">
+                <form action="https://formsubmit.co/ad8f8d6b27cea95d7a7679c9e357c4e9" method="POST">
                     <h2>Send Message</h2>
                     <div class="input-box">
                         <input type="text" name="name" required="required">
@@ -180,13 +181,13 @@
                         <span>Your Email</span>
                     </div>
                     <div class="input-box">
-                        <textarea required="required"></textarea>
+                        <textarea type="text" name="message" required="required"></textarea>
                         <span>Type your message...</span>
                     </div>
                     <div class="input-box">
                         <input type="submit" name="" value="Send">
                         <input type="hidden" name="_subject" value="New email!">
-                        <input type="hidden" name="_next" value="https://yourdomain.co/thankyou.html">
+                        <input type="hidden" name="_next" value="https://sgoudie77.github.io/Portfolio/thankyou.html">
                     </div>
                 </form>
             </div>
