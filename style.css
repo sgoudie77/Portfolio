@@ -347,7 +347,13 @@ body {
     width: 200px;
     height: 200px;
     margin: 5px;
-    display: block;
+    /* display: block; */
+
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
 }
 
 .projects .project-box.hide {
@@ -355,12 +361,37 @@ body {
 }
 
 .projects .project-box img {
-    position: absolute;
+    /* position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: cover; */
+    position: relative;
+    width: 180px;
+    padding-top: .5em;
+}
+
+.project-links {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5em;
+}
+
+.project-links a {
+    text-decoration: none;
+    color: var(--clr-blue);
+    letter-spacing: 1px;
+    font-weight: 400;
+    /* border: 1px solid var(--clr-light-gray); */
+}
+
+.project-links a:hover {
+    color: var(--clr-gray);
+    font-weight: 500;
+    transition: 0.3s ease;
 }
 /* portfolio section styles end here */
 
