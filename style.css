@@ -8,8 +8,9 @@
     font-family: 'Poppins', sans-serif;
 }
 
-html, body {
+html {
     scroll-behavior: smooth;
+    font-size: 62.5%;
 }
 
 body {
@@ -21,14 +22,21 @@ body {
 }
 
 :root {
+    --fs-h1: 4rem;
+    --fs-h2: 3.25rem;
+    --fs-h3: 2rem;
+    --fs-h4: 1.6rem;
+    --fs-h5: 1.4rem;
+    --fs-p: 1.5rem;
+    
     --clr-white: #f5f5f5;
     --clr-light-gray: #7e7e7ed1;
     --clr-gray: #3f3f3fd1;
     --clr-dark: #000000;
     --clr-dark-tr: #000000d1;
+    --clr-blue: #159fdf;
     /* --clr-green: #027141d1; */
     /* --clr-green: #03a9f4; */
-    --clr-blue: #159fdf;
 }
 
 .container {
@@ -41,14 +49,14 @@ body {
 
 .view-down, .back-to-top {
     position: absolute;
-    bottom: 0.5em;
+    bottom: 1rem;
     left: 49.5%;
 }
 
 .view-down a, .back-to-top a {
     text-decoration: none;
     color: var(--clr-white);
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 .view-down a:hover, .back-to-top a:hover {
@@ -69,11 +77,12 @@ body {
     display: flex;
     justify-content: space-between;
     width: 100%;
-    padding-left: 3em;
-    padding-right: 3em;
-    height: 6em;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    height: 6rem;
     align-items: center;
     position: fixed;
+    z-index: 8;
 }
 
 .header.sticky {
@@ -89,7 +98,7 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 3px;
-    font-size: 1.4rem;
+    font-size: 2rem;
     font-weight: 400;
 }
 
@@ -103,6 +112,7 @@ body {
     color: #f9f9f9;
     list-style: none;
     font-weight: 200;
+    font-size: var(--fs-h5);
 }
 
 .navbar ul li a {
@@ -110,7 +120,7 @@ body {
     color: var(--clr-white);
     text-transform: uppercase;
     letter-spacing: 3px;
-    padding-left: 1.5em;
+    padding-left: 1.5rem;
 }
 
 .navbar ul li a:hover {
@@ -121,31 +131,35 @@ body {
 .hero-title {
     position: relative;
     color: var(--clr-white);
-    padding-left: 3em;
-    transform: translateY(160%);
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 
 .hero-title span {
     color: var(--clr-blue);
 }
 
-.hero-title h2 {
-    font-size: 3em;
+.hero-title h1 {
+    font-size: var(--fs-h1);
     font-weight: 100;
     letter-spacing: 2px;
 }
 
 .hero-title h3 {
-    font-size: 1.7em;
+    font-size: var(--fs-h3);
     font-weight: 100;
     letter-spacing: 1.5px;
-    margin-bottom: .7em;
+    margin-bottom: 1.25rem;
 }
 
 .hero-title button {
     background-color: transparent;
+    width: 115px;
     border: 1px solid var(--clr-gray);
-    padding: .5em .9em;
+    padding: .5rem .9rem;
     cursor: pointer; 
 }
 
@@ -175,11 +189,11 @@ body {
 
 .about-title {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .about-title h2 {
-    font-size: 2.2em;
+    font-size: var(--fs-h2);
     font-weight: 200;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -193,7 +207,7 @@ body {
 }
 
 .about .portrait {
-    margin-left: 3em;
+    margin-left: 3rem;
 }
 
 .about .portrait img {
@@ -208,15 +222,16 @@ body {
     justify-content: center;
     align-items: center;
     letter-spacing: 2px;
-    padding-left: 3em;
-    margin-right: 3em;
+    padding-left: 3rem;
+    margin-right: 3rem;
 }
 
 .about .about-info h3 {
+    font-size: var(--fs-h3);
     font-weight: 300;
     letter-spacing: 2px;
     color: var(--clr-blue);
-    margin-right: 1em;
+    margin-right: 1rem;
     text-transform: uppercase;
 }
 
@@ -231,17 +246,18 @@ body {
 }
 
 .skill-box .fa {
-    margin-right: .2em;
+    margin-right: .2rem;
     color: var(--clr-blue);
     font-weight: 100;
-    font-size: .8em;
+    font-size: 1.25rem;
 }
 
 .skill-box p {
-    margin-right: 1.5em;
+    margin-right: 1.5rem;
 }
 
 .about .about-info p {
+    font-size: var(--fs-p);
     font-weight: 100;
     text-align: justify;
 }
@@ -249,14 +265,14 @@ body {
 .about .about-info .about-btn {
     position: relative;
     display: flex;
-    margin: .5em 0;
+    margin: .5rem 0;
 }
 
 .about .about-info button {
     background-color: transparent;
     border: 1px solid var(--clr-gray);
-    padding: .5em .9em; 
-    margin-bottom: 1em;
+    padding: .5rem .9rem; 
+    margin-bottom: 1rem;
 }
 
 .about .about-info a {
@@ -283,7 +299,7 @@ body {
 }
 
 .projects-title h2 {
-    font-size: 2.2em;
+    font-size: var(--fs-h2);
     font-weight: 200;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -306,14 +322,15 @@ body {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 2em;
+    margin-bottom: 3rem;
+    font-size: var(--fs-h5);
 }
 
 .projects-area ul li {
     list-style: none;
     background: transparent;
     border: 1px solid var(--clr-light-gray);
-    padding: 12px 20px;
+    padding: 1rem 1.4rem;
     margin: 5px;
     letter-spacing: 2px;
     font-weight: 300;
@@ -344,8 +361,6 @@ body {
     width: 200px;
     height: 200px;
     margin: 5px;
-    /* display: block; */
-
     display: flex;
     flex-direction: column;
     background-color: #fff;
@@ -358,15 +373,9 @@ body {
 }
 
 .projects .project-box img {
-    /* position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; */
     position: relative;
     width: 180px;
-    padding-top: .5em;
+    padding-top: .5rem;
 }
 
 .project-links {
@@ -374,15 +383,16 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: .5em;
+    margin-top: .75rem;
 }
 
 .project-links a {
     text-decoration: none;
     color: var(--clr-blue);
     letter-spacing: 1px;
+    font-size: var(--fs-h5);
     font-weight: 400;
-    /* border: 1px solid var(--clr-light-gray); */
+    margin-top: .5rem;
 }
 
 .project-links a:hover {
@@ -395,7 +405,7 @@ body {
 /* contact section styles start here */
 .contact {
     position: relative;
-    padding: 3em 8em 0 8em;
+    padding: 3rem 8rem 0 8rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -408,7 +418,7 @@ body {
 }
 
 .contact .contact-title h2 {
-    font-size: 2.2em;
+    font-size: var(--fs-h2);
     font-weight: 200;
     color: #fff;
     letter-spacing: 2px;
@@ -416,9 +426,10 @@ body {
 }
 
 .contact .contact-title p {
+    font-size: var(--fs-p);
     font-weight: 100;
     color: var(--clr-white);
-    letter-spacing: 2px;
+    letter-spacing: 2.5px;
 }
 
 .contact .contact-main {
@@ -429,14 +440,14 @@ body {
 }
 
 .contact .contact-main .contact-info {
-    width: 50%;
+    width: 40%;
     display: flex;
     flex-direction: column;
 }
 
 .contact .contact-main .contact-info .contact-details {
     position: relative;
-    padding: 1.2em 0;
+    padding: 1.2rem 0;
     display: flex;
 }
 
@@ -449,13 +460,13 @@ body {
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    font-size: 16px;
+    font-size: 1.6rem;
 }
 
 .contact .contact-main .contact-info .contact-details .contact-text {
     display: flex;
     margin-left: 15px;
-    font-size: 16px;
+    font-size: 1.6rem;
     color: var(--clr-white);
     flex-direction: column;
     font-weight: 100;
@@ -474,9 +485,9 @@ body {
 
 .contact .contact-main .contact-info .contact-details .contact-text .fa {
     color: var(--clr-white);
-    font-size: 24px;
-    margin-top: .1em;
-    margin-right: 1.1em;
+    font-size: 2rem;
+    margin-top: .1rem;
+    margin-right: 3.3rem;
 }
 
 .contact .contact-main .contact-info .contact-details .contact-text .fa:hover {
@@ -487,11 +498,11 @@ body {
 
 .contact-form {
     width: 40%;
-    padding: 2em;
+    padding: 2rem;
 }
 
-.contact-form h2 {
-    font-size: 1.5em;
+.contact-form h3 {
+    font-size: var(--fs-h3);
     color: var(--clr-white);
     font-weight: 100;
     letter-spacing: 2px;
@@ -511,7 +522,7 @@ body {
 .contact-form .input-box textarea {
     width: 100%;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 10px 0;
     border: 1px solid var(--clr-light-gray);
     color: var(--clr-white);
@@ -524,7 +535,7 @@ body {
     position: absolute;
     left: 0;
     padding: 5px 10px;
-    font-size: 16px;
+    font-size: 1.6rem;
     margin: 10px 0;
     pointer-events: none;
     transition: 0.5s;
@@ -538,10 +549,10 @@ body {
 .contact-form .input-box textarea:focus ~ span,
 .contact-form .input-box textarea:valid ~ span {
     color: var(--clr-blue);
-    font-size: 12px;
+    font-size: 1.2rem;
     font-weight: 200;
     letter-spacing: 2.5px;
-    transform: translateY(-25px);
+    transform: translateY(-2.5rem);
 }
 
 .contact-form .input-box input[type="submit"] {
@@ -550,7 +561,9 @@ body {
     color: #fff;
     border: 1px solid var(--clr-light-gray);
     cursor: pointer;
-    font-size: 1em;
+    font-size: 1.5rem;
+    font-weight: 100;
+    letter-spacing: 1.5px;
     margin: 0; 
 }
 
@@ -562,7 +575,7 @@ body {
 
 /* custom scrollbar styles start here */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 1rem;
 }
 ::-webkit-scrollbar-track {
     background: #f1f1f1;
@@ -583,7 +596,7 @@ body {
     align-items: center;
     width: 100%;
     height: 100vh;
-    padding: 3em;
+    padding: 3rem;
 }
 
 .confirmation-text h1,
@@ -595,15 +608,15 @@ body {
 }
 
 .confirmation-text h2 {
-    margin-bottom: .5em;
-    margin-top: .2em;
+    margin-bottom: .5rem;
+    margin-top: .2rem;
 }
 
 .confirmation-text button {
-    margin-top: 1.5em;
+    margin-top: 2.5rem;
     background-color: transparent;
     border: 1px solid var(--clr-gray);
-    padding: .5em .9em;
+    padding: .5rem .9rem;
 }
 
 .confirmation-text a {
@@ -620,21 +633,17 @@ body {
 
 /* responsive styles start here */
 @media (max-width: 991px) {
-    
-    .hero-title {
-        transform: translateY(210%);
-    }
-    .hero-title h2 {
-        font-size: 2.5em;
+    .hero-title h1 {
+        font-size: 3rem;
     }
     .hero-title h3 {
-        font-size: 1.5em;
+        font-size: 1.7rem;
     }
     .about-title {
-        margin-top: 5em;
+        margin-top: 6rem;
     }
     .about-title h2 {
-        font-size: 1.8em;
+        font-size: 2.5rem;
     }
     .about-main {
         flex-direction: column;
@@ -643,26 +652,31 @@ body {
     .about .portrait {
         margin-left: 0;
     }
+    .about .portrait img {
+        height: 275px;
+    } 
     .about-info {
         width: auto;
         margin-top: 1.25em;
         padding-left: 0;
         margin-right: 0;
+        margin-bottom: 3rem;
     }
     .portfolio {
-        padding-top: 5em;
+        padding-top: 3rem;
     }
     .projects-title h2 {
-        font-size: 1.8em;
+        font-size: 2.5rem;
+        margin-top: 4rem;
     }
     .projects-area {
-        margin-bottom: 2em;
+        margin-bottom: 5rem;
     }
     .projects-area ul li {
         padding: 8px 15px;
     }
     .contact {
-        padding: 5em 1em;
+        padding: 6rem 1rem;
     }
     .contact-title h2 {
         font-size: 1.8em;
