@@ -253,7 +253,7 @@ body {
 }
 
 .skill-box p {
-    margin-right: 1.5rem;
+    margin-right: 3rem;
 }
 
 .about .about-info p {
@@ -662,11 +662,14 @@ body {
         margin-right: 0;
         margin-bottom: 3rem;
     }
+    .skill-box p {
+        margin-right: 0;
+        width: 150px;
+    }
     .portfolio {
         padding-top: 3rem;
     }
     .projects-title h2 {
-        /* font-size: 2.5rem; */
         margin-top: 4rem;
     }
     .projects-area {
@@ -689,13 +692,13 @@ body {
     }
     .contact-main .contact-info {
         margin-top: 1rem;
-        width: 60%;
-    }
-    .contact-main .contact-info .contact-details {
-        margin-top: .5rem;
+        width: 70%;
+        align-items: center;
     }
     .contact .contact-main .contact-info .contact-details {
         padding: .3rem 0;
+        margin-top: 1rem;
+        width: 200px;
     }
     .contact-main .contact-info, 
     .contact-form {
@@ -762,13 +765,22 @@ body {
     }
     .about-title h2,
     .projects-title h2,
-    .contact-title h2 {
+    .contact .contact-title h2 {
         font-size: 2rem;
+    }
+    .about .about-info p {
+        font-size: var(--fs-h5);
+    }
+    .skill-box p {
+        width: 125px;
     }
     .projects-title {
         margin-left: 1.5rem;
         margin-right: 1.5rem;
         text-align: center;
+    }
+    .contact-main .contact-info {
+        padding-left: 3rem;
     }
 }
 /* responsive styles end here */
