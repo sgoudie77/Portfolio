@@ -647,7 +647,7 @@ body {
     }
     .about-main {
         flex-direction: column;
-        margin-bottom: 3em;
+        margin-bottom: 3rem;
     }
     .about .portrait {
         margin-left: 0;
@@ -657,7 +657,7 @@ body {
     } 
     .about-info {
         width: auto;
-        margin-top: 1.25em;
+        margin-top: 1.25rem;
         padding-left: 0;
         margin-right: 0;
         margin-bottom: 3rem;
@@ -666,7 +666,7 @@ body {
         padding-top: 3rem;
     }
     .projects-title h2 {
-        font-size: 2.5rem;
+        /* font-size: 2.5rem; */
         margin-top: 4rem;
     }
     .projects-area {
@@ -679,7 +679,7 @@ body {
         padding: 6rem 1rem;
     }
     .contact-title h2 {
-        font-size: 1.8em;
+        font-size: 2.5rem;
     }
     .contact-main {
         flex-direction: column;
@@ -688,14 +688,14 @@ body {
         max-width: 80%;
     }
     .contact-main .contact-info {
-        margin-top: 1em;
+        margin-top: 1rem;
+        width: 60%;
     }
     .contact-main .contact-info .contact-details {
-        justify-content: center;
-        margin-top: .5em;
+        margin-top: .5rem;
     }
     .contact .contact-main .contact-info .contact-details {
-        padding: .3em 0;
+        padding: .3rem 0;
     }
     .contact-main .contact-info, 
     .contact-form {
@@ -712,7 +712,7 @@ body {
     }
     .toggle {
         position: fixed;
-        right: 3em;
+        right: 3rem;
         width: 25px;
         height: 25px;
         cursor: pointer;
@@ -724,7 +724,7 @@ body {
     }
     .toggle.active {
         position: fixed;
-        right: 3em;
+        right: 3rem;
         background: url(img/close.png);
         background-size: 20px;
         background-position: center;
@@ -744,11 +744,31 @@ body {
         z-index: 10;
     }
     .header .navbar ul.navigation.active li {
-        padding: 1em;
-        font-size: 1.25em;
+        padding: 1rem;
+        font-size: 2rem;
     }
     .header .navbar ul.navigation.active li a {
         padding-left: 0;
+    }
+}
+
+@media (max-width: 528px) {
+    .hero-title h1 {
+        font-size: 2rem;
+    }
+    .hero-title h3 {
+        font-size: 1.25rem;
+        padding-top: 1rem;
+    }
+    .about-title h2,
+    .projects-title h2,
+    .contact-title h2 {
+        font-size: 2rem;
+    }
+    .projects-title {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+        text-align: center;
     }
 }
 /* responsive styles end here */
