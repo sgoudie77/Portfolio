@@ -22,21 +22,20 @@ body {
 }
 
 :root {
+    /* font-sizes */
     --fs-h1: 4rem;
     --fs-h2: 3.25rem;
     --fs-h3: 2rem;
     --fs-h4: 1.6rem;
     --fs-h5: 1.4rem;
     --fs-p: 1.5rem;
-    
+    /* colors */
     --clr-white: #f5f5f5;
     --clr-light-gray: #7e7e7ed1;
     --clr-gray: #3f3f3fd1;
     --clr-dark: #000000;
     --clr-dark-tr: #000000d1;
     --clr-blue: #159fdf;
-    /* --clr-green: #027141d1; */
-    /* --clr-green: #03a9f4; */
 }
 
 .container {
@@ -633,6 +632,16 @@ body {
 
 /* responsive styles start here */
 @media (max-width: 991px) {
+    body:after {
+        content: "";
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: -1;
+        display: block;
+    }
     .hero-title h1 {
         font-size: 3rem;
     }
@@ -780,7 +789,13 @@ body {
         text-align: center;
     }
     .contact-main .contact-info {
-        padding-left: 3rem;
+        padding-left: 1.5rem;
+    }
+    .contact .contact-title h2 {
+        margin-bottom: 1rem;
+    }
+    .contact .contact-title p {
+        font-size: var(--fs-h5);
     }
 }
 /* responsive styles end here */
