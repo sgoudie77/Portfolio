@@ -634,13 +634,7 @@ body {
 @media (max-width: 991px) {
     body {
         background-position: top center;
-        background-size: 100 100;
-        
-        /* background-size: auto 100vw; */
-        /* -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover; */
-        /* overflow: auto; */
+        background-size: auto 100%;
     } 
     .hero-title h1 {
         font-size: 3rem;
