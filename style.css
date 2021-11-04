@@ -42,7 +42,7 @@ body {
     min-height: 100vh;
     height: auto;
     width: 100%;
-    max-width: 100vw;
+    /* max-width: 100vw; */
     color: var(--clr-white);
 }
 
@@ -635,6 +635,7 @@ body {
     body {
         background-position: top center;
         background-size: 350vw auto;
+        background-attachment: fixed;
     } 
     .hero-title h1 {
         font-size: 3rem;
