@@ -634,8 +634,9 @@ body {
 @media (max-width: 991px) {
     body {
         background-position: top center;
+        /* background-position: fixed; */
         background-size: 350vw auto;
-        background-attachment: fixed;
+        background-attachment: initial;
     } 
     .hero-title h1 {
         font-size: 3rem;
