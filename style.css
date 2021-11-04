@@ -634,7 +634,7 @@ body {
 @media (max-width: 991px) {
     body {
         background-position: top center;
-        background-size: auto 100%;
+        background-size: 350vw auto;
     } 
     .hero-title h1 {
         font-size: 3rem;
@@ -771,7 +771,7 @@ body {
     .contact .contact-title h2 {
         font-size: 2rem;
     }
-    .about .about-info p {
+    .about .about-info .info-text {
         font-size: var(--fs-h5);
     }
     .skill-box p {
