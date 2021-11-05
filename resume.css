@@ -25,9 +25,51 @@ body {
     margin: 50px;
     display: grid;
     grid-template-columns: 1fr 2fr;
-    box-shadow: 0 35px 55px rgbna(0, 0, 0, 0.1);
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
 }
 /* Global Styles End Here */
+
+/* Back Button Styles Start Here */
+.go-back {
+    position: absolute;
+    background-color: #7e7e7e;
+    z-index: 99;
+    border: none;
+    padding: 0 .4rem 1.6rem .4rem;
+    height: 24px;
+}
+
+.go-back a {
+    text-decoration: none;
+    font-size: 12px;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 100;
+}
+
+.go-back a:hover {
+    color: #159fdf;
+    transition: 0.3s ease;
+}
+
+.go-back .fa {
+    font-size: 10px;
+    margin-right: 3px;
+}
+
+#top {
+    top: .4rem;
+    left: .4rem;
+    color: #fff;
+}
+
+#bottom {
+    bottom: .4rem;
+    right: .4rem;
+    /* background-color: #7e7e7e; */
+    color: #000;
+}
+/* Back Button Styles end Here */
 
 /* Left Column Styles Start Here */
 .container .left_side {
@@ -73,7 +115,7 @@ body {
 }
 
 .contactInfo {
-    padding-top: 40px;
+    padding-top: 20px;
 }
 
 .title {
@@ -100,7 +142,7 @@ body {
     display: inline-block;
     width: 30px;
     font-size: 18px;
-    color: #03a9f4;
+    color: #159fdf;
 }
 
 .contactInfo ul li span {
@@ -114,13 +156,13 @@ body {
 }
 
 .contactInfo ul li span a:hover {
-    color: #03a9f4;
+    color: #159fdf;
     transition: 0.3s;
 }
 
 .contactInfo.details {
     border-bottom: 1px solid rgba(255,255,255,0.2);
-    padding-bottom: .5em;
+    padding-bottom: 1em;
 }
 
 .contactInfo.education li {
@@ -148,7 +190,7 @@ body {
 }
 
 .contactInfo.education h4 span {
-    color: #03a9f4;
+    color: #159fdf;
 }
 
 .contactInfo.education {
@@ -162,7 +204,7 @@ body {
 }
 
 .contactInfo.language ul li span {
-    color: #03a9f4;
+    color: #159fdf;
 }
 /* Left Column Styles End Here */
 
@@ -205,7 +247,7 @@ p {
 }
 
 .about .box .date-employer h4 {
-    color: #03a9f4;
+    color: #159fdf;
     font-weight: 500;
 }
 

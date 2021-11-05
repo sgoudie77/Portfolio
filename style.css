@@ -13,14 +13,6 @@ html {
     font-size: 62.5%;
 }
 
-/* body {
-    background-image: url('img/hero-bg.jpg');
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-} */
-
 :root {
     /* font-sizes */
     --fs-h1: 4rem;
@@ -40,20 +32,20 @@ html {
 
 .bg-area {
     position: fixed;
-right: 0;
-bottom: 0;
-min-width: 100%;
-min-height: 100%;
-width: auto;
-height: auto;
-z-index: -100;
-margin: 0;
-padding: 0;
-background: url(img/hero-bg.jpg) center center no-repeat;
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -100;
+    margin: 0;
+    padding: 0;
+    background: url(img/hero-bg.jpg) center center no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
 .container {
@@ -650,12 +642,6 @@ background-size: cover;
 
 /* responsive styles start here */
 @media (max-width: 991px) {
-    /* body {
-        background-position: top center;
-        background-position: fixed;
-        background-size: 350vw auto;
-        background-attachment: initial;
-    }  */
     .hero-title h1 {
         font-size: 3rem;
     }
