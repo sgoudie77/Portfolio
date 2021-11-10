@@ -48,6 +48,16 @@ html {
     background-size: cover;
 }
 
+.bg-area::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
 .container {
     min-height: 100vh;
     height: auto;
@@ -105,10 +115,9 @@ html {
     color: #f9f9f9;
     list-style: none;
     text-decoration: none;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     font-size: 2rem;
-    font-weight: 400;
+    font-weight: 300;
 }
 
 .logo span {
@@ -461,8 +470,8 @@ html {
 }
 
 .contact .contact-main .contact-info .contact-details .icon {
-    min-width: 30px;
-    height: 30px;
+    min-width: 25px;
+    height: 25px;
     color: var(--clr-dark);
     background: var(--clr-white);
     display: flex;
