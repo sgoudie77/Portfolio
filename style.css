@@ -120,10 +120,6 @@ html {
     font-weight: 300;
 }
 
-.logo span {
-    color: var(--clr-blue);
-}
-
 .navbar ul {
     position: relative;
     display: flex;
@@ -229,8 +225,9 @@ html {
 }
 
 .about .portrait img {
-    height: 375px;
+    height: 300px;
     filter: grayscale(50%);
+    border-radius: 50%;
 }
 
 .about .about-info {
@@ -253,27 +250,6 @@ html {
     text-transform: uppercase;
 }
 
-.skills {
-    width: 100%;
-}
-
-.skill-box {
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.skill-box .fa {
-    margin-right: .2rem;
-    color: var(--clr-blue);
-    font-weight: 100;
-    font-size: 1.25rem;
-}
-
-.skill-box p {
-    margin-right: 3rem;
-}
-
 .about .about-info p {
     font-size: var(--fs-p);
     font-weight: 100;
@@ -290,7 +266,7 @@ html {
     background-color: transparent;
     border: 1px solid var(--clr-gray);
     padding: .5rem .9rem; 
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .about .about-info a {
@@ -306,6 +282,69 @@ html {
     transition: 0.3s ease-in-out;
 }
 /* about section styles end here */
+
+/* skills styles start here */
+.skills {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 6rem;
+}
+.skills-title {
+    text-align: center;
+    margin-bottom: 6rem;
+    width: 65%;
+}
+.skills-title h2 {
+    font-size: var(--fs-h2);
+    font-weight: 200;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    letter-spacing: 2px;  
+}
+.skills-title p {
+    font-size: var(--fs-p);
+    letter-spacing: 1px;
+}
+.skills-area {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+}
+.skill-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 6rem;
+}
+.skill-icon {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8.25rem;
+    width: 125px;
+}
+.skill-list {
+    width: 175px;
+}
+.skill-list ul li {
+    list-style: none;
+    font-size: var(--fs-p);
+    letter-spacing: 1px;
+}
+.skill-list ul li:nth-child(1) {
+    letter-spacing: 2px;
+    font-size: var(--fs-h4);
+}
+/* skills styles end here */
 
 /* portfolio section styles start here */
 .portfolio {
@@ -392,30 +431,42 @@ html {
 
 .projects .project-box img {
     position: relative;
-    width: 180px;
+    width: 150px;
     padding-top: .5rem;
+}
+
+.project-details {
+    margin-bottom: .5rem;
+}
+
+.project-details p {
+    color: var(--clr-dark);
+    font-size: var(--fs-h5);
+    text-align: center;
 }
 
 .project-links {
     position: relative;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     align-items: center;
-    margin-top: .75rem;
+    text-align: center;
 }
 
 .project-links a {
     text-decoration: none;
     color: var(--clr-blue);
     letter-spacing: 1px;
-    font-size: var(--fs-h5);
-    font-weight: 400;
-    margin-top: .5rem;
+    font-size: 1.25rem;
+    font-weight: 300;
+    margin: 0 .25rem;
+    padding: 2px;
+    border: 1px solid var(--clr-light-gray);
 }
 
 .project-links a:hover {
-    color: var(--clr-gray);
-    font-weight: 500;
+    background-color: var(--clr-light-gray);
+    font-weight: 300;
     transition: 0.3s ease;
 }
 /* portfolio section styles end here */
@@ -680,9 +731,11 @@ html {
         margin-right: 0;
         margin-bottom: 3rem;
     }
-    .skill-box p {
-        margin-right: 0;
-        width: 150px;
+    .skills {
+        padding: 6rem 0;
+    }
+    .skills-title h2 {
+        font-size: 2.5rem;
     }
     .portfolio {
         padding-top: 3rem;
@@ -788,9 +841,6 @@ html {
     }
     .about .about-info .info-text {
         font-size: var(--fs-h5);
-    }
-    .skill-box p {
-        width: 125px;
     }
     .projects-title {
         margin-left: 1.5rem;

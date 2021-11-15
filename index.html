@@ -7,6 +7,7 @@
     <meta name="format-detection" content="telephone=no">
     <title>Portfolio: Sean Goudie</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.14.0/devicon.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -18,13 +19,14 @@
         
         <div class="header">
             <div class="logo">
-                <a href="#home" class="logo">Sean <span>Goudie</span></a>
+                <a href="#home" class="logo">Sean Goudie</a>
             </div>
             <div class="toggle" onclick="toggleMenu();"></div>
             <div class="navbar">
                 <ul class="navigation">
                     <li><a href="#home" onclick="toggleMenu();">Home</a></li>
                     <li><a href="#about" onclick="toggleMenu();">About</a></li>
+                    <li><a href="#skills" onclick="toggleMenu();">Skills</a></li>
                     <li><a href="#projects" onclick="toggleMenu();">Projects</a></li>
                     <li><a href="#contact" onclick="toggleMenu();">Contact</a></li>
                 </ul>
@@ -73,36 +75,144 @@
                         <h3>This Portfolio Site</h3>
                     </div>
                     <div>
-                        <p class="info-text">This portfolio site is an ongoing project as I continue learning, and it was built from scratch with HTML, CSS, and JavaScript using what I have learned from countless lessons and tutorials to showcase my projects. Background image credit goes to <em>Samuel Scalzo</em> on <em>Unsplash.com</em>.</p>
+                        <p class="info-text">This portfolio site is an ongoing project as I continue learning, and it was built from scratch with HTML, CSS, and JavaScript on Visual Studio Code using what I have learned from countless lessons and tutorials to showcase my projects. Background image credit goes to <em>Samuel Scalzo</em> on <em>Unsplash.com</em>.</p>
                     </div>
                     <div class="about-btn">
                         <button><a href="https://github.com/sgoudie77/Portfolio" target="_blank">Source Code</a></button>
                     </div>
                 </div>
             
-                <div class="skills">
-                    <h3>My Skills</h3>
-                    <div class="skill-box">
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>HTML5</p>
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>CSS3</p>
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>JavaScript</p>
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>React</p>
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>Git</p>
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>Github</p>
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>Photoshop</p>
-                        <p class="skill-item"><i class="fa fa-chevron-right" aria-hidden="true"></i>Figma</p>
-                    </div>
-                </div>
             </div>
 
         </div>     
         
         <div class="view-down">
-            <a href="#projects"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+            <a href="#skills"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
         </div>
 
     </div>
     <!-- about section ends here -->
+
+    <!-- skills section starts here -->
+    <div class="container skills" id="skills">
+
+        <div class="skills-title">
+            <h2>Skills</h2>
+            <p>This is a list of the tech that I have used to build projects including some of their basic skills, concepts, libraries, or frameworks that I am familiar with.</p>
+        </div>
+
+        <div class="skills-area">
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-html5-plain colored"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>HTML5</li>
+                        <li>- Classes & Ids</li>
+                        <li>- Tags & Nesting</li>
+                        <li>- External Linking</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-css3-plain colored"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>CSS3</li>
+                        <li>- Flexbox & Grid</li>
+                        <li>- Bootstrap 3 & 4</li>
+                        <li>- Responsive Design</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-javascript-plain colored"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>JavaScript</li>
+                        <li>- Filter & Map</li>
+                        <li>- Leaflet & Swiper</li>
+                        <li>- Fetch API</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-react-original colored"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>React</li>
+                        <li>- Hooks</li>
+                        <li>- Routing</li>
+                        <li>- npm</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-git-plain colored"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>Git (Bash)</li>
+                        <li>- Basic Commands</li>
+                        <li>- Git Branching</li>
+                        <li>- Remote Access</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-github-original"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>Github</li>
+                        <li>- Requests</li>
+                        <li>- Version Control</li>
+                        <li>- Pages</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-photoshop-line colored"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>Photoshop</li>
+                        <li>- Design Layout</li>
+                        <li>- Typography</li>
+                        <li>- Photo Editing</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-icon">
+                    <i class="devicon-figma-plain colored"></i>
+                </div>
+                <div class="skill-list">
+                    <ul>
+                        <li>Figma</li>
+                        <li>- Wireframing</li>
+                        <li>- Mockups</li>
+                        <li>- Prototyping</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="view-down">
+            <a href="#projects"><i class="fa fa-chevron-down" aria-hidden="true"></i></a>
+        </div>
+    </div>
+    <!-- skills section ends here -->
 
     <!-- portfolio section starts here -->
     <div class="container portfolio" id="projects">
@@ -122,6 +232,15 @@
             <div class="projects">
                 <div class="project-box" data-item="landing">
                     <img src="img/landing1.png" alt="Landing Page 1">
+                    <div class="project-details">
+                        <p>Basic landing page using flexbox.</p>
+                        <p>Tech used: 
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-photoshop-line colored"></i>
+                            <i class="devicon-figma-plain colored"></i>
+                        </p>
+                    </div>
                     <div class="project-links">
                         <a href="https://sgoudie77.github.io/NDPA-Landing-Page/" target="_blank">View Demo</a>
                         <a href="https://github.com/sgoudie77/NDPA-Landing-Page" target="_blank">Source Code</a>
@@ -129,6 +248,14 @@
                 </div>
                 <div class="project-box" data-item="landing">
                     <img src="img/landing2.png" alt="Landing Page 2">
+                    <div class="project-details">
+                        <p>Baisc landing page using React.</p>
+                        <p>Tech used: 
+                            <i class="devicon-react-original colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-figma-plain colored"></i>
+                        </p>
+                    </div>
                     <div class="project-links">
                         <a href="https://sgoudie77.github.io/React-Landing-Page-1/" target="_blank">View Demo</a>
                         <a href="https://github.com/sgoudie77/React-Landing-Page-1" target="_blank">Source Code</a>
@@ -136,6 +263,15 @@
                 </div>
                 <div class="project-box" data-item="landing">
                     <img src="img/landing3.png" alt="Landing Page 3">
+                    <div class="project-details">
+                        <p>Landing page with a responsive menu.</p>
+                        <p>Tech used: 
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-photoshop-line colored"></i>
+                        </p>
+                    </div>
                     <div class="project-links">
                         <a href="https://sgoudie77.github.io/Band-Homepage/" target="_blank">View Demo</a>
                         <a href="https://github.com/sgoudie77/Band-Homepage" target="_blank">Source Code</a>
@@ -143,6 +279,16 @@
                 </div>
                 <div class="project-box" data-item="full">
                     <img src="img/site1.png" alt="Full Site 2">
+                    <div class="project-details">
+                        <p>Restaurant site with a filter menu.</p>
+                        <p>Tech used: 
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                            <i class="devicon-photoshop-line colored"></i>
+                            <i class="devicon-figma-plain colored"></i>
+                        </p>
+                    </div>
                     <div class="project-links">
                         <a href="https://sgoudie77.github.io/Restaurant-Site/" target="_blank">View Demo</a>
                         <a href="https://github.com/sgoudie77/Restaurant-Site" target="_blank">Source Code</a>
@@ -150,6 +296,14 @@
                 </div>
                 <div class="project-box" data-item="apps">
                     <img src="img/app1.png" alt="Apps 1">
+                    <div class="project-details">
+                        <p>Weather app using a fetch API.</p>
+                        <p>Tech used: 
+                            <i class="devicon-html5-plain colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-javascript-plain colored"></i>
+                        </p>
+                    </div>
                     <div class="project-links">
                         <a href="https://sgoudie77.github.io/Weather-App/" target="_blank">View Demo</a>
                         <a href="https://github.com/sgoudie77/Weather-App" target="_blank">Source Code</a>
@@ -157,6 +311,14 @@
                 </div>
                 <div class="project-box" data-item="apps">
                     <img src="img/app2.png" alt="Apps 2">
+                    <div class="project-details">
+                        <p>React product card with a hover effect.</p>
+                        <p>Tech used: 
+                            <i class="devicon-react-original colored"></i>
+                            <i class="devicon-css3-plain colored"></i>
+                            <i class="devicon-photoshop-line colored"></i>
+                        </p>
+                    </div>
                     <div class="project-links">
                         <a href="https://sgoudie77.github.io/React-Product-Card/" target="_blank">View Demo</a>
                         <a href="https://github.com/sgoudie77/React-Product-Card" target="_blank">Source Code</a>
