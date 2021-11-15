@@ -437,12 +437,14 @@ html {
 
 .project-details {
     margin-bottom: .5rem;
+    margin-top: .5rem;
 }
 
 .project-details p {
     color: var(--clr-dark);
     font-size: var(--fs-h5);
     text-align: center;
+    padding: 0 .2rem;
 }
 
 .project-links {
@@ -458,7 +460,7 @@ html {
     color: var(--clr-blue);
     letter-spacing: 1px;
     font-size: 1.25rem;
-    font-weight: 300;
+    font-weight: 400;
     margin: 0 .25rem;
     padding: 2px;
     border: 1px solid var(--clr-light-gray);
@@ -466,7 +468,7 @@ html {
 
 .project-links a:hover {
     background-color: var(--clr-light-gray);
-    font-weight: 300;
+    font-weight: 400;
     transition: 0.3s ease;
 }
 /* portfolio section styles end here */
@@ -722,7 +724,7 @@ html {
         margin-left: 0;
     }
     .about .portrait img {
-        height: 275px;
+        height: 225px;
     } 
     .about-info {
         width: auto;
@@ -734,8 +736,18 @@ html {
     .skills {
         padding: 6rem 0;
     }
+    .skills-title {
+        margin-bottom: 3rem;
+    }
     .skills-title h2 {
         font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+    .skill-item {
+        margin-bottom: 3rem;
+    }
+    .skill-icon {
+        font-size: 7.75rem;
     }
     .portfolio {
         padding-top: 3rem;
