@@ -320,19 +320,28 @@ html {
 .skill-item {
     position: relative;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-bottom: 6rem;
+    /* margin-bottom: 6rem; */
+    margin: 0 8rem 6rem 8rem;
 }
 .skill-icon {
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 8.25rem;
+    font-size: 10.25rem;
     width: 125px;
+    margin-bottom: 1rem;
 }
-.skill-list {
+
+.skill-title {
+    font-size: var(--fs-p);
+    letter-spacing: 2px;
+}
+
+/* .skill-list {
     width: 175px;
 }
 .skill-list ul li {
@@ -343,7 +352,7 @@ html {
 .skill-list ul li:nth-child(1) {
     letter-spacing: 2px;
     font-size: var(--fs-h4);
-}
+} */
 /* skills styles end here */
 
 /* portfolio section styles start here */
@@ -670,17 +679,35 @@ html {
     padding: 3rem;
 }
 
-.confirmation-text h1,
-.confirmation-text h2,
+.confirmation-text {
+    border: 1px solid var(--clr-gray);
+    padding: 3rem;
+    background-color: #000000a0;
+}
+
+.confirmation-text h3,
+.confirmation-text h4,
 .confirmation-text p {
     letter-spacing: 2px;
     color: var(--clr-white);
     font-weight: 100;
 }
 
-.confirmation-text h2 {
+.confirmation-text h3 {
+    margin-top: -1rem;
+    font-size: var(--fs-h3);
+}
+
+.confirmation-text h4 {
     margin-bottom: .5rem;
     margin-top: .2rem;
+    font-size: var(--fs-h4);
+}
+
+.confirmation-text p {
+    font-size: var(--fs-p);
+    font-weight: 100;
+
 }
 
 .confirmation-text button {
