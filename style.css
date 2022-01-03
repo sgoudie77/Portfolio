@@ -340,19 +340,6 @@ html {
     font-size: var(--fs-p);
     letter-spacing: 2px;
 }
-
-/* .skill-list {
-    width: 175px;
-}
-.skill-list ul li {
-    list-style: none;
-    font-size: var(--fs-p);
-    letter-spacing: 1px;
-}
-.skill-list ul li:nth-child(1) {
-    letter-spacing: 2px;
-    font-size: var(--fs-h4);
-} */
 /* skills styles end here */
 
 /* portfolio section styles start here */
@@ -362,6 +349,7 @@ html {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 4rem;
 }
 
 .projects-title h2 {
@@ -388,7 +376,8 @@ html {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 3rem;
+    margin-bottom: 1.5rem;
+    margin-top: -1.5rem;
     font-size: var(--fs-h5);
 }
 
