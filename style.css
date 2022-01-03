@@ -142,6 +142,12 @@ html {
     transition: 0.3s ease;
 }
 
+#resume {
+    border: 1px solid var(--clr-gray);
+    padding: .1rem .4rem .1rem .7rem;
+    margin-left: 1rem;
+}
+
 .hero-title {
     position: relative;
     color: var(--clr-white);
